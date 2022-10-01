@@ -1,0 +1,28 @@
+import turtle
+tina=turtle.Turtle()
+tina.shape('turtle')
+
+def haz_pastel(x=0, y=0):
+    tina.penup()
+    tina.color('pink')
+    tina.goto(x, y)
+    tina.pendown()
+    tina.begin_fill()
+    tina.goto(x + 20, y)
+    tina.goto(x + 20, y + 20)
+    tina.goto(x - 20, y + 20)
+    tina.goto(x - 20, y)
+    tina.goto(x, y)  
+    tina.end_fill()
+    tina.goto(x, y + 20)
+    tina.color('yellow')
+    tina.goto(x, y + 35)
+    tina.goto(x, y + 30)
+    tina.color('black')
+    tina.goto(x, y + 20)
+    tina.penup()
+    tina.goto(x, y + 10)
+
+haz_pastel(0,0)
+haz_pastel(10000,0)
+haz_pastel(10000,0)
